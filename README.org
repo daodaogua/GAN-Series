@@ -18,7 +18,7 @@
 
 - [[https://www.leiphone.com/news/201807/t7rcgT86ZWyG44Kv.html?viewType=weixin][调试经验参考]]，[[https://medium.com/@jonathan_hui/gan-gan-series-2d279f906e7b][原文]]
 
-- [[https://arxiv.org/abs/1801.04406][Which Training Methods for GANs do actually Converge?]], [[https://github.com/LMescheder/GAN_stability][github--tensorflow版代码]]
+- [[https://arxiv.org/abs/1801.04406][Which Training Methods for GANs do actually Converge?]], [[https://github.com/LMescheder/GAN_stability][github--tensorflow版代码]] <br>
   [[https://github.com/daodaogua/GAN-Series/blob/master/GAN_stability.org][个人总结]]
 *** TODO 完成这篇文章的总结
     DEADLINE: <2019-01-14 一>
