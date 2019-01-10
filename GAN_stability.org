@@ -1,0 +1,66 @@
+
+#+TITLE:    Which Training Methods for GANs do actually Converge? 总结
+#+AUTHOR:   Qiang
+#+DATE:     [2019-01-10 四]
+
+
+
+*** 此文的贡献
+ - 拿出一个简单但是有代表性的GAN模型分析GAN优化算法的收敛性
+ - 讨论最近提出的正则技术是否能稳定训练
+ - 引入一个简化的梯度惩罚项，证明其能够使正则化的GAN训练中能够局部收敛
+
+
+*** Nash-equilibrium
+  assumption:生成器和辨别器都足够强大能够近似任何的真值函数
+  此2玩家游戏的唯一Nash-equilibrium即
+  生成器产生真实的数据分布;辨别器对于任何的数据分布都输出0
+
+*** GAN算法的优化目标
+  [loss function]
+  生成器的目标: 最小化loss function
+  辨别器的目标: 最大化loss function
+  GAN的训练目标: 找到Nash-equilibrium,即得到G和D的一组权重,其使得D和G不能单方面提升各自的性能
+
+*** 现有算法局部收敛性的分析手段
+  对梯度下降的操作求其N-E点的jacobian矩阵,然后对jacobian矩阵求奇异值
+  - 如果有奇异值的绝对超过1,则不会收敛到N-E点
+  - 如果奇异值的绝对值都小于1,则以lamdb最大值线性收敛
+  - 如果奇异值的绝对值都等于1,可能收敛,发散或其他
+
+  如果有理想连续系统
+  - 如果所有奇异值有负的实部,则收敛
+  - 如果有奇异值有正的实部,则不收敛
+  - 如果所有奇异值只有虚部,则可能收敛,发散或其他
+
+*** Dirac-GAN
+  "Simple experiments, simple theorems are the building blocks that help us understand more complicated systems."
+  Ali Rahimi - Test of Time Award speech, NIPS 2017
+
+  生成器:单变量[],输出分布为[]
+  辨别器:线性辨别器,单权重
+  true数据分布:0
+  [loss function]
+
+*** 以Dirac-GAN说明局部不收敛出现的情况及来源
+  Nash-equilibrium: theta = 0,omiga = 0
+  通常的训练方法,f,unregularized,simGD/altGD
+  theta和omiga在训练过程中的路径如下图,都无法收敛到Nash-equilibrium
+
+  D和G同步更新和分步更新,收敛性分析中的奇异值为,
+
+  1. 当离Nash-equilibrium比较远的点开始训练
+     1. 当G离true数据分布比较远,D使G靠近true数据分布,且D变得越来越确定[其梯度越来越大]
+     2. 当G达到true数据分布,D的梯度达到最大,使G原理true数据分步
+  2. 当G处于true数据分布时
+     1. D无法梯度为零
+     2. 使得G偏离true数据分布
+
+*** 优化算法及其收敛效果介绍
+
+
+*** 暂时不懂的专业词
+
+- a lower dimensional manifold
+- zero gradients orthogonal to the tagent space of the data manifold
+

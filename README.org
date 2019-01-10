@@ -1,0 +1,43 @@
+
+* GAN的研究记录
+
+** GAN由Goodfellow等首次提出，[[https://arxiv.org/abs/1406.2661][arxiv版论文]]
+
+
+** DCGAN为GAN深度卷积模型上的AlexNet，[[https://arxiv.org/abs/1511.06434][arxiv版论文]]，[[https://github.com/carpedm20/DCGAN-tensorflow][github--tensorflow版代码]]
+
+- 1D模型见[[][代码库]]
+
+
+** BiGAN为GAN中有往返通道的模型，[[https://arxiv.org/abs/1605.09782][arxiv版论文]]，[[https://github.com/jeffdonahue/bigan][BiGAN-theano-github库]]，[[https://github.com/WilliBee/bigan_SRL][BiGAN-pytorch github库]]
+
+- 1D模型见[[][代码库]]
+
+
+** 训练算法
+
+- [[https://www.leiphone.com/news/201807/t7rcgT86ZWyG44Kv.html?viewType=weixin][调试经验参考]]，[[https://medium.com/@jonathan_hui/gan-gan-series-2d279f906e7b][原文]]
+
+- [[https://arxiv.org/abs/1801.04406][Which Training Methods for GANs do actually Converge?]], [[https://github.com/LMescheder/GAN_stability][github--tensorflow版代码]]
+
+*** TODO 完成这篇文章的总结
+    DEADLINE: <2019-01-14 一>
+    - []文字版 [1/2]
+    - []加图片
+    - []加表格
+    - []加公式
+*** TODO 使用其中的stablize的方法
+    DEADLINE: <2019-01-17 四>
+    - []放入BiGAN中使用
+    - []成为一个工具包
+    - []使用工具包forDCGAN,BiGAN
+
+*** TODO 整理已有的模型形成工具包
+    DEADLINE: <2019-01-18 五>
+
+*** TODO 整理已有的总结资料放入github
+    DEADLINE: <2019-01-21 一>
+
+* 比较好的资源
+
+- [[https://medium.com/@jonathan_hui/gan-gan-series-2d279f906e7b][GAN — GAN Series (from the beginning to the end)]]，[[][jonathan_hui]]
