@@ -70,7 +70,7 @@
      [[./Convergence_properties_in_DiracGAN.png]]
 
 **** 2D简单问题上的结果
-     [[./Convergence_properties_in_DiracGAN.png]]
+     [[./Optimization_result_in_2D.png]]
 #+CAPTION: Wasserstein-1-distance
 
 **** CIFAR-10
