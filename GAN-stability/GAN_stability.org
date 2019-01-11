@@ -17,12 +17,12 @@
   生成器产生真实的数据分布;辨别器对于任何的数据分布都输出0
 
 *** GAN算法的优化目标
-  \begin{equation}
-  x = \sqrt(t)
-  \end{equation}
-  生成器的目标: 最小化loss function
-  辨别器的目标: 最大化loss function
-  GAN的训练目标: 找到Nash-equilibrium,即得到G和D的一组权重,其使得D和G不能单方面提升各自的性能
+\begin{equation}
+x = \sqrt(t)
+\end{equation}
+- 生成器的目标: 最小化loss function
+- 辨别器的目标: 最大化loss function
+- GAN的训练目标: 找到Nash-equilibrium,即得到G和D的一组权重,其使得D和G不能单方面提升各自的性能
 
 *** 现有算法局部收敛性的分析手段
   对梯度下降的操作求其N-E点的jacobian矩阵,然后对jacobian矩阵求奇异值
