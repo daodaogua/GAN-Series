@@ -80,11 +80,10 @@
     - R1 和 R2 gamma = 10
     - WGAN-GP gamma = 10
 
-  WGAN-GP5: 5 D update per G update\\
-  其他: 1 D update per G update\\
-  test
+    - WGAN-GP5: 5 D update per G update\\
+    - 其他: 1 D update per G update
 
-  inception score
+    - inception score
 
   [图片]
   补充:WGAN-GP5效果不错,可能有两个原因:1近N-E震荡,2收敛到an energy or full-rank solution
