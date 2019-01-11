@@ -75,8 +75,8 @@
 
 **** CIFAR-10
   测试环境配置: \\
-  \\ DCGAN3层卷积层(CIFAR-10无batch normalization)   \\
-  \\ RMSProp alpha = 0.9, lr = 1e-4 \\
+    DCGAN3层卷积层(CIFAR-10无batch normalization)   \\
+    RMSProp alpha = 0.9, lr = 1e-4 \\
   R1 和 R2 gamma = 10 \\
   WGAN-GP gamma = 10 \\
 
