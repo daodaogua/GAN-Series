@@ -57,10 +57,103 @@
      2. 使得G偏离true数据分布
 
 *** 优化算法及其收敛效果介绍
+  - Standard GAN 和 non-Saturating GAN [[https://arxiv.org/abs/1406.2661][arxiv版论文]]
+    两者差别在loss function,[公式],S为minmax, non的G为max
+  - WGAN [[https://arxiv.org/abs/1701.07875][arxiv版论文]]
+  - WGAN-GP [[https://arxiv.org/abs/1704.00028v3][arxiv版论文]]
+  - consensus optimization [[https://arxiv.org/abs/1705.10461][arxiv版论文]]
+  - Instance noise [[https://arxiv.org/abs/1610.04490][arxiv版论文16]]  [[https://arxiv.org/abs/1701.04862][arxiv版论文17]]
+  - Gradient penalty 和 Gradient penalty and critical regularization [[https://arxiv.org/abs/1705.09367][arxiv版论文]]
+  - R1 和 R2, Gradient penalty本文中的简化版本
+
+**** Dirac-GAN的收敛结果
+     [图片]
+
+**** 2D简单问题上的结果
+     [图片]
+
+**** CIFAR-10
+  测试环境配置: \\
+  DCGAN3层卷积层(CIFAR-10无batch normalization) \\
+  RMSProp alpha = 0.9, lr = 1e-4 \\
+  R1 和 R2 gamma = 10 \\
+  WGAN-GP gamma = 10 \\
+
+  WGAN-GP5: 5 D update per G update
+  其他: 1 D update per G update
+
+  inception score
+
+  [图片]
+  补充:WGAN-GP5效果不错,可能有两个原因:1近N-E震荡,2收敛到an energy or full-rank solution
+
+**** Imagenet
+  测试环境配置: \\
+  具体可以查看文章,有两点特别,1G和D都用了resnet,且层数比较深,2G和D限制在相同的输入标签
+
+  模型结构: \\
+  [图片]
+
+  [图片]
+
+  补充:
+  - exponential moving average能提升inception score
+  - unregularized GAN迅速模型崩溃
+
+**** celebA-HQ
+  测试环境配置: \\
+  基本与Imagenet相同
+
+  模型结构: \\
+  略微与imagenet不同,见下表
+  [图片]
+
+  R1的效果比较好
+
+
+*** 总结
+
+  - 有非常多的稳定训练的方法,需要继续收集
+  - R1应该是个不错的初始选择
+  - WGAN在Dirac-GAN上表现不好,但复杂的数据集上表现不错,但不作为首选
+
+*** 稳定训练的方法[未排序;有部分内容不是此文章中的]
+  - 成本函数                      :*:
+    - non-Saturating GAN
+    - WGAN  [GP属于?]
+  - 正则项
+    - R1                          :*:
+    - R2
+    - Gradient penalty
+    - Gradient penalty(CR)
+  - 归一化项
+    - Batch normalization
+    - Layer normalization
+    - Spectral normalization      :*:
+    - Virtual Batch nomalization
+  - 其他
+    - instance noise              :*:
+    - 加入标签
+    - exponential moving average
+    - 微批次鉴别
+    - 特征匹配
+    - 单面标签平滑
+    - 历史平均
+    - 经验回放
+
+  - 实用技巧
+    - 将图像的像素值转换到 -1 到 1 之间。在生成模型的最后一层使用 tanh 作为激活函数
+    - 在实验中使用高斯分布对 z 取样
+    - 上采样时使用 PixelShuffle 和反卷积
+    - 下采样时不要使用最大池化而使用卷积步长
+    - Adam 优化通常比别的优化方法表现的更好
+    - 图像交给判别模型之前添加一些噪声，不管是真实的图片还是生成的
+    - 调试lr和D,G的优化次数
+
 
 
 *** 暂时不懂的专业词
 
 - a lower dimensional manifold
 - zero gradients orthogonal to the tagent space of the data manifold
-
+- an energy or full-rank solution
