@@ -18,7 +18,7 @@
 
 *** GAN算法的优化目标
   \begin{equation}
-  x = \sqrt(t)
+  x = \sqrt()
   \end{equation}
   生成器的目标: 最小化loss function
   辨别器的目标: 最大化loss function
