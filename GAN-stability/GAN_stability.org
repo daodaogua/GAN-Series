@@ -80,7 +80,7 @@
     - R1 和 R2 gamma = 10
     - WGAN-GP gamma = 10
 
-  WGAN-GP5: 5 D update per G update
+  WGAN-GP5: 5 D update per G update\\
   其他: 1 D update per G update
 
   inception score
