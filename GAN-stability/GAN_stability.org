@@ -81,7 +81,8 @@
     - WGAN-GP gamma = 10
 
   WGAN-GP5: 5 D update per G update\\
-  其他: 1 D update per G update
+  其他: 1 D update per G update\\
+  test
 
   inception score
 
