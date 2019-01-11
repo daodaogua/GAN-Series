@@ -67,7 +67,7 @@
   - R1 和 R2, Gradient penalty本文中的简化版本
 
 **** Dirac-GAN的收敛结果
-     [[GAN-stability/Convergence_properties_in_DiracGAN.png]]
+     [[./Convergence_properties_in_DiracGAN.png]]
 
 **** 2D简单问题上的结果
      [图片]
