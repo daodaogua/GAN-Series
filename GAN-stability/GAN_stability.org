@@ -1,3 +1,7 @@
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 
 #+TITLE:    Which Training Methods for GANs do actually Converge? 总结
 #+AUTHOR:   Qiang
@@ -17,9 +21,12 @@
   生成器产生真实的数据分布;辨别器对于任何的数据分布都输出0
 
 *** GAN算法的优化目标
+#+BEGIN_LaTeX
 \begin{equation}
 x = \sqrt(t)
 \end{equation}
+#+END_LaTeX
+
 - 生成器的目标: 最小化loss function
 - 辨别器的目标: 最大化loss function
 - GAN的训练目标: 找到Nash-equilibrium,即得到G和D的一组权重,其使得D和G不能单方面提升各自的性能
