@@ -74,18 +74,18 @@
 #+CAPTION: Wasserstein-1-distance
 
 **** CIFAR-10
-  测试环境配置:
-    - DCGAN3层卷积层(CIFAR-10无batch normalization)
-    - RMSProp alpha = 0.9, lr = 1e-4
-    - R1 和 R2 gamma = 10
-    - WGAN-GP gamma = 10
+  测试环境配置: \\
+  DCGAN3层卷积层(CIFAR-10无batch normalization) \\
+  RMSProp alpha = 0.9, lr = 1e-4 \\
+  R1 和 R2 gamma = 10 \\
+  WGAN-GP gamma = 10 \\
 
-    - WGAN-GP5: 5 D update per G update\\
-    - 其他: 1 D update per G update
+  WGAN-GP5: 5 D update per G update
+  其他: 1 D update per G update
 
-    - inception score
+  inception score
 
-  [[./inception_score_in_CIFAR-10.png]]
+  [图片]
   补充:WGAN-GP5效果不错,可能有两个原因:1近N-E震荡,2收敛到an energy or full-rank solution
 
 **** Imagenet
@@ -93,9 +93,10 @@
   具体可以查看文章,有两点特别,1G和D都用了resnet,且层数比较深,2G和D限制在相同的输入标签
 
   模型结构: \\
-  [[./Architectures_for_Imagenet.png]]
+  [图片]
 
-  [[./inception_score_in_Imagenet.png]]
+  [图片]
+
   补充:
   - exponential moving average能提升inception score
   - unregularized GAN迅速模型崩溃
@@ -106,7 +107,7 @@
 
   模型结构: \\
   略微与imagenet不同,见下表
-  [[./Architecture_for_LSUN-and-celebA.png]]
+  [图片]
 
   R1的效果比较好
 

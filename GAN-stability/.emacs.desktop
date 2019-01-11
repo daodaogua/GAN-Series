@@ -1,0 +1,44 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Jan 11 17:45:00 2019
+;; Desktop file format version 208
+;; Emacs version 25.3.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23608 26012 250314 10000) (desktop . "208") "iwos-ml@iwosml" nil nil ((((tty-type . "xterm-256color") (tty . "/dev/tty") (display-type . color) (background-mode . dark) (foreground-color . "#eaeaea") (cursor-color . "#d54e53") (tool-bar-lines . 0) (vertical-scroll-bars) (menu-bar-lines . 0) (background-color . "#000000") (border-color . "#424242") (font . "tty") (height . 49) (width . 169) (modeline . t) (unsplittable) (internal-border-width . 0) (frameset--id . "AD1B-AA97-0776-B67A") (frameset--mini t) (minibuffer . t)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 2) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 2) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 169) (pixel-height . 48) (total-width . 169) (total-height . 48) (normal-height . 1.0) (normal-width . 1.0) (buffer "##GAN_stability.org##" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1) (start . 1))))])
+(setq comint-input-ring nil)
+(setq compile-history nil)
+(setq desktop-missing-file-warning nil)
+(setq dired-regexp-history nil)
+(setq extended-command-history '("package-refresh-contents"))
+(setq face-name-history nil)
+(setq file-name-history '("/home/iwos-ml/iwos_workspace/yq_shared/cee/GAN-Series/GAN-stability/" "/home/iwos-ml/iwos_workspace/yq_shared/cee/GAN-Series/GAN-stability/##GAN_stability.org##" "~/.emacs.d/custom.el" "~/.emacs.d/org-clock-save.el" "/home/iwos-ml/iwos_workspace/yq_shared/cee/GAN-Series/GAN-stability/GAN_stability.org" "~/.emacs.d/custom.el" "~/.emacs.d/org-clock-save.el" "/home/iwos-ml/iwos_workspace/yq_shared/cee/GAN-Series/GAN-stability/#GAN_stability.org#" "~/.emacs.d/custom.el" "~/.emacs.d/init.el" "~/.emacs.d/custom.el" "/home/iwos-ml/.emacs.d/init-local.el" "/home/iwos-ml/.emacs.d/" "~/.emacs.d/init.el" "~/.emacs.d/custom.el" "~/.emacs.d/custom.el" "~/iwos_workspace/yq_shared/cee/GAN-Series/GAN-stability/GAN_stability.org" "/home/iwos-ml/iwos_workspace/yq_shared/cee/GAN-Series/" "~/.emacs.d/custom.el" "/home/iwos-ml/iwos_workspace/yq_shared/cee/GAN-Series/README.org" "/home/iwos-ml/iwos_workspace/yq_shared/cee/GAN-Series/GAN-stability/R" "~/iwos_workspace/yq_shared/cee/GAN-Series/GAN-stability/GAN_stability.org" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-25.3/slime-20190105.2006/contrib/test/slime-cl-indent-test.txt" "~/iwos_workspace/yq_shared/cee/GAN-Series/README.org" "~/.emacs.d/org-clock-save.el" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-25.3/slime-20190105.2006/contrib/test/slime-cl-indent-test.txt" "~/iwos_workspace/yq_shared/cee/GAN-Series/README.org" "~/iwos_workspace/yq_shared/cee/GAN-Series/GAN_stability.org" "~/.emacs.d/org-clock-save.el" "/home/iwos-ml/iwos_workspace/yq_shared/cee/GAN-Series/GAN_stability.org" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-25.3/slime-20190105.2006/contrib/test/slime-cl-indent-test.txt" "~/iwos_workspace/yq_shared/cee/GAN-Series/README.org" "~/iwos_workspace/yq_shared/cee/GAN-Series/GAN_stability.org" "~/.emacs.d/org-clock-save.el" "~/iwos_workspace/yq_shared/cee/GAN-Series/init" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-25.3/slime-20190105.2006/contrib/test/slime-cl-indent-test.txt" "~/iwos_workspace/yq_shared/cee/GAN-Series/README.org" "~/.emacs.d/org-clock-save.el" "~/iwos_workspace/yq_shared/cee/GAN-Series/README.org" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-25.3/slime-20190105.2006/contrib/test/slime-cl-indent-test.txt" "/" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-25.3/slime-20190105.2006/contrib/test/slime-cl-indent-test.txt" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-25.3/slime-20190105.2006/contrib/test/slime-cl-indent-test.txt" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-25.3/slime-20190105.2006/contrib/test/slime-cl-indent-test.txt" "~/.emacs.d/custom.el" "~/.emacs.d/elpa-25.3/slime-20190105.2006/contrib/test/slime-cl-indent-test.txt" "~/.emacs.d/custom.el" "~/.emacs.d/"))
+(setq grep-find-history nil)
+(setq grep-history nil)
+(setq ivy-history '("README.org" "M"))
+(setq minibuffer-history nil)
+(setq query-replace-history nil)
+(setq read-expression-history nil)
+(setq regexp-history nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq search-ring '("add-hook"))
+(setq shell-command-history nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/iwos-ml/iwos_workspace/yq_shared/cee/GAN-Series/GAN-stability/##GAN_stability.org##"
+  "##GAN_stability.org##"
+  'fundamental-mode
+  '(immortal-scratch-mode auto-compile-on-load-mode projectile-mode diff-hl-mode whitespace-cleanup-mode guide-key-mode hes-mode whole-line-or-region-local-mode beacon-mode global-auto-revert-mode company-mode ivy-mode counsel-mode anzu-mode dimmer-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-emacs-unix))
+  '((mark-ring nil)))
+
