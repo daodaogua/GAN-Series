@@ -16,7 +16,7 @@
   生成器产生真实的数据分布;辨别器对于任何的数据分布都输出0
 
 *** GAN算法的优化目标
-[loss funtion如下]
+[loss funtion如下] \\
 [[./GAN_loss_function.png]]
 - 生成器的目标: 最小化loss function
 - 辨别器的目标: 最大化loss function
@@ -55,18 +55,18 @@
 
 *** 优化算法及其收敛效果介绍
   - Standard GAN 和 non-Saturating GAN [[https://arxiv.org/abs/1406.2661][arxiv版论文]]
-    两者差别在loss function,S为minmax, non的G为max,[non的loss function如下]
+    两者差别在loss function,S为minmax, non的G为max,[non的loss function如下] \\
     [[./non-Saturating_loss_function.png]]
-  - WGAN [[https://arxiv.org/abs/1701.07875][arxiv版论文]]
+  - WGAN [[https://arxiv.org/abs/1701.07875][arxiv版论文]] \\
     [[./WGAN.png]]
-  - WGAN-GP [[https://arxiv.org/abs/1704.00028v3][arxiv版论文]]
+  - WGAN-GP [[https://arxiv.org/abs/1704.00028v3][arxiv版论文]] \\
     [[WGAN-GP.png]]
   - consensus optimization [[https://arxiv.org/abs/1705.10461][arxiv版论文]]
   - Instance noise [[https://arxiv.org/abs/1610.04490][arxiv版论文16]]  [[https://arxiv.org/abs/1701.04862][arxiv版论文17]]
   - Gradient penalty 和 Gradient penalty and critical regularization [[https://arxiv.org/abs/1705.09367][arxiv版论文]]
   - R1 和 R2, Gradient penalty本文中的简化版本
-    [[./R1.png]]
-    [[./R2.png]]
+    - [[./R1.png]]
+    - [[./R2.png]]
 
 **** Dirac-GAN的收敛结果
      [[./Convergence_properties_in_DiracGAN.png]]
