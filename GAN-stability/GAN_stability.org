@@ -60,7 +60,7 @@
   - WGAN [[https://arxiv.org/abs/1701.07875][arxiv版论文]] \\
     [[./WGAN.png]]
   - WGAN-GP [[https://arxiv.org/abs/1704.00028v3][arxiv版论文]] \\
-    [[WGAN-GP.png]]
+    [[./WGAN-GP.png]]
   - consensus optimization [[https://arxiv.org/abs/1705.10461][arxiv版论文]]
   - Instance noise [[https://arxiv.org/abs/1610.04490][arxiv版论文16]]  [[https://arxiv.org/abs/1701.04862][arxiv版论文17]]
   - Gradient penalty 和 Gradient penalty and critical regularization [[https://arxiv.org/abs/1705.09367][arxiv版论文]]
