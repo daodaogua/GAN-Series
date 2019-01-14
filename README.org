@@ -22,12 +22,16 @@
  [[https://github.com/daodaogua/GAN-Series/blob/master/GAN_stability.org][个人总结]]
 
 
-**** TODO 完成这篇文章的总结
-    DEADLINE: <2019-01-14 一>
+**** DONE 完成这篇文章的总结
+     CLOSED: [2019-01-14 一 10:22] DEADLINE: <2019-01-14 一>
+     :LOGBOOK:  
+     - State "DONE"       from "NEXT"       [2019-01-14 一 10:22]
+     :END:      
     - [ ]文字版 [1/1]
     - [ ]加图片 [1/1]
     - [ ]加表格 [0/0]
-    - [ ]加公式,更改目标为其他方式编辑然后加入图片 [0/1]
+    - [ ]加公式,更改目标为其他方式编辑然后加入图片 [1/1]
+
 **** TODO 使用其中的stablize的方法
     DEADLINE: <2019-01-17 四>
     - []放入BiGAN中使用
@@ -40,6 +44,9 @@
 **** TODO 整理已有的总结资料放入github
     DEADLINE: <2019-01-21 一>
 
+
+**** TODO 不断优化个人总结
+     DEADLINE: <2019-02-02 六>
 
 * 比较好的资源
 
