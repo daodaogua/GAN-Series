@@ -1,5 +1,7 @@
 
-* GAN的研究记录
+#+title: GAN的研究记录
+#+author: Qiang
+
 ** GAN模型
 - GAN由Goodfellow等首次提出，[[https://arxiv.org/abs/1406.2661][arxiv版论文]]
 
@@ -53,6 +55,6 @@
 **** TODO 不断优化个人总结
      DEADLINE: <2019-02-02 六>
 
-* 比较好的资源
+** 比较好的资源
 
 - [[https://medium.com/@jonathan_hui/gan-gan-series-2d279f906e7b][GAN — GAN Series (from the beginning to the end)]]，[[][jonathan_hui]]
