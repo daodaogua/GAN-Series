@@ -29,39 +29,6 @@
 - [[https://arxiv.org/abs/1801.04406][Which Training Methods for GANs do actually Converge?]], [[https://github.com/LMescheder/GAN_stability][github--tensorflow版代码]] \\
   [[https://github.com/daodaogua/GAN-Series/blob/master/GAN-stability/GAN_stability.org][个人总结]]
 
-**** DONE 完成这篇文章的总结
-     CLOSED: [2019-01-14 一 10:22] DEADLINE: <2019-01-14 一>
-     :LOGBOOK:  
-     - State "DONE"       from "NEXT"       [2019-01-14 一 10:22]
-     :END:      
-    - [ ]文字版 [1/1]
-    - [ ]加图片 [1/1]
-    - [ ]加表格 [0/0]
-    - [ ]加公式,更改目标为其他方式编辑然后加入图片 [1/1]
-
-**** TODO 更改GAN_stability,1D->2D数据
-     DEADLINE: <2019-01-21 一>
-**** TODO 整理已有的模型形成工具包
-    DEADLINE: <2019-01-22 二>
-
-**** TODO 整理已有的总结资料放入github
-    DEADLINE: <2019-01-22 二>
-
-**** TODO gan_train的完善
-
-**** TODO 查看NVIDIA高清图片的文章
-     DEADLINE: <2019-01-23 三>
-
-**** TODO 使用其中的stablize的方法
-    DEADLINE: <2019-01-17 四>
-    - []放入BiGAN中使用 [3/3]
-    - []放入DCGAN中使用 [1/1]
-    - []成为一个工具包 [2/2]
-    - []使用工具包forDCGAN,BiGAN [2/2]
-
-**** TODO 不断优化个人总结
-     DEADLINE: <2019-02-02 六>
-
 
 ** 比较好的资源
 
