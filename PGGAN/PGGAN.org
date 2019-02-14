@@ -16,7 +16,7 @@
 ** PGGAN
    - D和G镜像结构
    - 增加layer时,图像降采样-差值 + residual结构加gate
-   - [['./PGGAN_progressive_growing_process.png']]
+   - [[./PGGAN_progressive_growing_process.png]]
 
 ** variation
    - 微批次方法[效果不算突出]
