@@ -21,13 +21,16 @@
 - PGGAN为Progressive Growing GANs,首次实现了1024人脸生成的，来自NVIDIA。PGGAN通过一种渐进式的结构，实现了从低分辨率到高分辨率的过渡，从而能平滑地训练出高清模型出来。论文还提出了自己对正则化、归一化的一些理解和技巧。由于是渐进式的(?)，所以相当于要串联地训练很多个模型，所以PGGAN很慢.[[[https://kexue.fm/archives/6240][简短说明参考出处]]]
   - [[https://arxiv.org/abs/1710.10196][arxiv版论文]]
   - [[https://github.com/tkarras/progressive_growing_of_gans][PGGAN-tensorflow-github库]]
+  - [][个人总结]]
 
+- GAN2.0 PGGAN同作者
+  - [[https://arxiv.org/abs/1812.04948][arxiv版论文]]
 ** 训练算法
 
 - [[https://www.leiphone.com/news/201807/t7rcgT86ZWyG44Kv.html?viewType=weixin][调试经验参考]]，[[https://medium.com/@jonathan_hui/gan-gan-series-2d279f906e7b][原文]]
 
-- [[https://arxiv.org/abs/1801.04406][Which Training Methods for GANs do actually Converge?]], [[https://github.com/LMescheder/GAN_stability][github--tensorflow版代码]] \\
-  [[https://github.com/daodaogua/GAN-Series/blob/master/GAN-stability/GAN_stability.org][个人总结]]
+- [[https://arxiv.org/abs/1801.04406][Which Training Methods for GANs do actually Converge?]], [[https://github.com/LMescheder/GAN_stability][github--tensorflow版代码]]
+  - [[https://github.com/daodaogua/GAN-Series/blob/master/GAN-stability/GAN_stability.org][个人总结]]
 
 
 ** 比较好的资源

@@ -1,0 +1,32 @@
+#+title: PGGAN总结
+#+author: Qiang
+
+** 文章贡献
+   - 高精度图像生成,同时加速训练,提升稳定性[]
+   - 提出一种提升图像多样性的方法,并提出测试方法
+   - 探讨模型崩溃,模型微调方法
+
+
+
+** 思考
+   - this incremental nature allows the training to first discover large-scale structure of theimage distribution and then shift attention to increasingly finer scale detail, instead of having to learnall scales simultaneously.
+     - 符合研究事物的结构规律,构造模型十分重要,上面的方法增加了一个维度--从整体到局部的学习过程,文中成progressive growing
+
+
+** PGGAN
+   - D和G镜像结构
+   - 增加layer时,图像降采样-差值 + residual结构加gate
+   - [['PGGAN_progressive_growing_process.png']]
+
+** variation
+   - 微批次方法[效果不算突出]
+
+** forbid mode collapsing
+   - 原因:G和D之间的unhealthy竞争,不平衡
+   - 目标:所有权重均速率学习
+   - 方法
+     - 训练过程中对权重per-layer normalization[he initializer],而非仅仅在初始化时
+     - 对generator卷积层后的特征向量做pixel-wise的"local response normalization"
+
+** metric
+   - 不同分辨率对全pixel判定误差
