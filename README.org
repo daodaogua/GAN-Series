@@ -26,6 +26,8 @@
 
 - GAN2.0 PGGAN同作者
   - [[https://arxiv.org/abs/1812.04948][arxiv版论文]]
+  - [[https://github.com/rosinality/style-based-gan-pytorch][style_based_gan-pytorch-github库]]
+
 ** 训练算法
 
 - [[https://www.leiphone.com/news/201807/t7rcgT86ZWyG44Kv.html?viewType=weixin][调试经验参考]]，[[https://medium.com/@jonathan_hui/gan-gan-series-2d279f906e7b][原文]]
