@@ -1,0 +1,28 @@
+#+title: styleGan总结
+#+author: Qiang
+
+** 主要贡献
+- 新的generator结构,借鉴自风格迁移,能够使高层特征分离, 合成控制
+- 新的衡量方法,衡量生成模型的内插及disentanglement[latent space的subspace线性or正交].
+- 人脸数据集
+
+** 模型实现
+- 主要部分,如D结构,训练方法,基本延续PGGAN
+- G使用了style-based模型
+  - [[./style-based_generator.png]]
+  - mixing regularity: 多latent space特征交叉输入,降低style间的相关度
+  - bilinear up/downsampling operations
+- 其他细节可查看文章,附录部分
+
+** disentanglement分析
+- path length
+  - 输入[z,f(z)]微小单位改变,生成的图像距离
+
+- separability
+  - 输入[z,f(z)]对生成图像分类[二],求entropy,越小特征空间线性度越高
+
+- f(z)优于z
+
+** 等待查看
+- style文章中关于style和features的比较可能有助于提取特征.,spatially varying features encode a specific instance.
+- 模型中有encoder的文章也挺多
