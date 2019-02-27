@@ -1,0 +1,42 @@
+#+title: SC-FEGAN论文总结
+#+author: Qiang
+
+** 研究现状概述
+- 研究目标
+  - image completation
+  - high quality
+  - provide a sketch and color to edit the image
+- 实现的情况
+  - restore masked region
+- 遇到的问题
+  - low quality, especially in edge
+  - low resolution
+
+** 主要贡献
+- SC-FEGAN
+  - function
+    - restore masked region
+    - generate region according to sketch
+    - change color
+  - result
+    - high quality
+    - high resoution
+  - structure
+    - similar to U-net
+    - use a SN-patchGAN discrimator
+      - solve issue awkward edges
+      - solve difficulty large portion missing
+    - loss
+      - gan loss
+      - style loss
+  - input
+    - making the input batch data
+
+** 实现效果
+
+** 存在的问题
+
+** 思考
+- U-net可以使用
+- 可以有复杂的loss, style, per-pixel,...
+- 主要结构还是在image completation, 有辅助手段解决color和sketch
