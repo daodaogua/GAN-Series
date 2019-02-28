@@ -17,7 +17,7 @@
   - [[https://github.com/WilliBee/bigan_SRL][BiGAN-pytorch github库]]
 
   - 1D模型见[[][代码库]]
-  
+
 - PGGAN为Progressive Growing GANs,首次实现了1024人脸生成的，来自NVIDIA。PGGAN通过一种渐进式的结构，实现了从低分辨率到高分辨率的过渡，从而能平滑地训练出高清模型出来。论文还提出了自己对正则化、归一化的一些理解和技巧。由于是渐进式的(?)，所以相当于要串联地训练很多个模型，所以PGGAN很慢.[[[https://kexue.fm/archives/6240][简短说明参考出处]]]
   - [[https://arxiv.org/abs/1710.10196][arxiv版论文]]
   - [[https://github.com/tkarras/progressive_growing_of_gans][PGGAN-tensorflow-github库]]
@@ -28,6 +28,11 @@
   - [[https://arxiv.org/abs/1812.04948][arxiv版论文]]
   - [[https://github.com/rosinality/style-based-gan-pytorch][style_based_gan-pytorch-github库]]
   - [[https://github.com/NVlabs/stylegan][stylegan-tensorflow-github库]]
+  - [[./GAN2.0/GAN2.0.org][个人总结]]
+
+- SC-FEGAN
+  - [[https://arxiv.org/pdf/1902.06838.pdf][arxiv版论文]]
+  - [[./SC-FEGAN/SC-FEGAN.org][个人总结]]
 
 ** 训练算法
 
