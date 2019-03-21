@@ -11,7 +11,7 @@
 
   - 1D模型见[[][代码库]]
 
-- BiGAN为GAN中有往返通道的模型
+- BiGAN为GAN中有往返通道的模型,E
   - [[https://arxiv.org/abs/1605.09782][arxiv版论文]]
   - [[https://github.com/jeffdonahue/bigan][BiGAN-theano-github库]]
   - [[https://github.com/WilliBee/bigan_SRL][BiGAN-pytorch github库]]
@@ -30,8 +30,9 @@
   - [[https://github.com/NVlabs/stylegan][stylegan-tensorflow-github库]]
   - [[./GAN2.0/GAN2.0.org][个人总结]]
 
-- SC-FEGAN
+- SC-FEGAN,恢复masked region,能够更具轮廓描述生成图像,能改变颜色;用到了U-net,SN-patchGAN discriminator旨在解决奇怪的边缘,图像大比例缺失.
   - [[https://arxiv.org/pdf/1902.06838.pdf][arxiv版论文]]
+  - [[https://github.com/JoYoungjoo/SC-FEGAN][SC-FEGAN-tensorflow-github库]]
   - [[./SC-FEGAN/SC-FEGAN.org][个人总结]]
 
 ** 训练算法
